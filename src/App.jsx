@@ -1,10 +1,12 @@
+import ColorButton from "./ColorButton";
 
-
-const App = () => {
+const App = (prop) => {
 
   return (
     <>
-    <h1>Testing</h1>
+    <ColorButton colorName="red"/>
+    <ColorButton colorName="white"/>
+    <ColorButton colorName="blue"/>
     </>
   )
 }
