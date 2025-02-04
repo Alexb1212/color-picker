@@ -1,12 +1,15 @@
+import { useState } from "react";
+
 import ColorButton from "./ColorButton";
 
-const App = (prop) => {
+const App = () => {
+  const [slectedColor, setSelectedColor] = useState("")
 
   return (
     <>
-    <ColorButton colorName="red"/>
-    <ColorButton colorName="white"/>
-    <ColorButton colorName="blue"/>
+    <ColorButton colorName="red" setSelectedColor={setSelectedColor}/>
+    <ColorButton colorName="white" setSelectedColor={setSelectedColor}/>
+    <ColorButton colorName="blue" setSelectedColor={setSelectedColor}/>
     </>
   )
 }
